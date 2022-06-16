@@ -1,0 +1,106 @@
+body{
+  background-color: #B7CED8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container { 
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total{
+  background-color: #B4DAE4;
+  height: 45px;
+  color: #fff;
+  padding-right: 5px;
+  text-align: right;
+  padding-top: 5px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal";
+}
+
+.dis{
+  height: 90px;
+  border: solid 1px #506973;
+}
+
+.dis input {
+  height: 45px;
+  width: 97.5%;
+  padding:  0px 5px;
+  text-align:center;
+  border-radius: 0px;
+  border: none;
+  background-color: #ECFBFF;
+  color: #85A5B2;
+  font-size: 20px;
+}
+
+.dis  ::placeholder{
+  color: #85A5B2;
+}
+
+.padButton{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #A8D2E3;
+  color: #fff;
+  border: solid 1px #506973;
+  cursor: pointer;
+  font-size:20px;
+}
+
+.padButton:hover{
+  border: 1px solid #fff;
+  color: #506973;
+}
+
+.dark-grey{
+  background-color: #85A5B2;
+}
+
+.red{
+  background-color: #FFB4B4; 
+}
+
+.dis{
+  grid-area: dis;
+  background-color: #B0E3FF;
+  text-align: right;
+  font-size: 20px;
+}
+
+.zero{
+  grid-area: zero;
+}
+
+.equal{
+  grid-area: equal;
+}
+
+ #divide , #seven , #clear, #clear-c, #eight, #nine, #four, #five, #six, #one, #two, #three{
+  border-right: none;
+  border-bottom: none;
+ }
+ #zero, #decimal{
+  border-right: none;
+ }
+
+ #multiply, #subtract, #add{
+  border-bottom: none;
+ }
